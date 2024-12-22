@@ -1,5 +1,13 @@
-PRAGMA TABLE_INFO('people');
-PRAGMA TABLE_INFO('transactions');
+ALTER TABLE people
+RENAME TO users;
+
+ALTER TABLE users
+RENAME COLUMN tag TO username;
+
+ALTER TABLE users
+ADD COLUMN password TEXT;
+
+PRAGMA TABLE_INFO('users');
 
 
 
