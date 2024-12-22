@@ -1,13 +1,9 @@
-ALTER TABLE people
-RENAME TO users;
+ALTER TABLE transactions
 
-ALTER TABLE users
-RENAME COLUMN tag TO username;
+ADD COLUMN was_successful BOOLEAN;
+ADD COLUMN transaction_type TEXT;
 
-ALTER TABLE users
-ADD COLUMN password TEXT;
-
-PRAGMA TABLE_INFO('users');
+PRAGMA TABLE_INFO('transactions');
 
 
 
