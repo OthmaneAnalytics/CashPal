@@ -1,4 +1,10 @@
-CREATE TABLE crud (c TEXT, r TEXT, u TEXT, d TEXT);
-INSERT INTO crud (c, r, u, d)
-VALUES ('CREATE = CREATE', 'READ = SELECT', 'UPDATE = UPDATE', 'DELETE = DELETE');
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    age INTEGER NOT NULL,
+    country_code TEXT NOT NULL,
+    username TEXT UNIQUE,
+    password TEXT NOT NULL,
+    is_admin BOOLEAN
+);
 
