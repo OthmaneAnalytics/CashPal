@@ -5,27 +5,14 @@
 
 -- Optional: Adjust column widths (for SQLite CLI)
 --.width 20 30 10  -- Adjust these numbers as needed
-INSERT into users (
-    id,
-    name,
-    country_code
-) values (
-    1,
-    'Jerry',
-    'US'
+CREATE TABLE transactions(
+    id INTEGER PRIMARY KEY,
+    sender_id INTEGER,
+    recipient_id INTEGER,
+    memo TEXT NOT NULL,
+    amount  INTEGER NOT NULL,
+    balance INTEGER NOT NULL
 );
 
-INSERT into users (
-    id,
-    name,
-    country_code
-) values (
-    2,
-    'Amit',
-    'IN'
-);
-
-/* -- DON'T TOUCH BELOW THIS LINE -- */
-
-SELECT * FROM users;
+PRAGMA TABLE_INFO('transactions');
 
