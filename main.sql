@@ -8,38 +8,24 @@
 INSERT into users (
     id,
     name,
-    age,
-    username,
-    password,
-    is_admin
+    country_code
 ) values (
     1,
-    'Rudolf',
-    33,
-    'rudolf1234',
-    'thisisnotsecure',
-    false
+    'Jerry',
+    'US'
 );
 
 INSERT into users (
     id,
     name,
-    age,
-    username,
-    password,
-    is_admin
+    country_code
 ) values (
     2,
-    'Jerry',
-    25,
-    'jerrysmith',
-    'mypasswordis1234',
-    true
+    'Amit',
+    'IN'
 );
 
+/* -- DON'T TOUCH BELOW THIS LINE -- */
+
 SELECT * FROM users;
-
-
-PRAGMA TABLE_INFO('users');
-
 
