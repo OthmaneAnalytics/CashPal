@@ -44,3 +44,4 @@ VALUES ('Darren', 15, 'CA', 'Dshan', 'found_me', false);
 INSERT INTO users(name, age, country_code, username, password, is_admin)
 VALUES ('Bob', 5, 'US', 'spongefrycook', 'garyTheSnail', false);
 
+
