@@ -5,4 +5,4 @@
 
 -- Optional: Adjust column widths (for SQLite CLI)
 --.width 20 30 10  -- Adjust these numbers as needed
-SELECT DISTINCT country_code FROM users;
+SELECT * FROM users WHERE country_code = 'CA' AND age < 18;

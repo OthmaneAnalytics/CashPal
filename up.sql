@@ -33,5 +33,14 @@ INSERT INTO users(name, age, country_code, username, password, is_admin)
 VALUES ('Tiffany', 28, 'US', 'Tifferoon', 'autoincrement', true);
 
 INSERT INTO users(name, age, country_code, username, password, is_admin)
-VALUES ('Lane', 27, 'US', 'wagslane', 'update_me', false);
+VALUES ('Calliou', 4, 'CA', 'calliou123', 'tooSecure', false);
+
+INSERT INTO users(name, age, country_code, username, password, is_admin)
+VALUES ('Lane', 27, 'US', 'wagslane', 'update_me', true);
+
+INSERT INTO users(name, age, country_code, username, password, is_admin)
+VALUES ('Darren', 15, 'CA', 'Dshan', 'found_me', false);
+
+INSERT INTO users(name, age, country_code, username, password, is_admin)
+VALUES ('Bob', 5, 'US', 'spongefrycook', 'garyTheSnail', false);
 
