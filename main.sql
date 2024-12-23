@@ -29,7 +29,7 @@ INSERT into users (
     password,
     is_admin
 ) values (
-    1,
+    2,
     'Jerry',
     25,
     'jerrysmith',
