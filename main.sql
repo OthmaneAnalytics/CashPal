@@ -1,9 +1,10 @@
-ALTER TABLE transactions
+.mode column
 
-ADD COLUMN was_successful BOOLEAN;
-ADD COLUMN transaction_type TEXT;
+-- Enable column headers
+.headers on
 
-PRAGMA TABLE_INFO('transactions');
+-- Optional: Adjust column widths (for SQLite CLI)
+--.width 20 30 10  -- Adjust these numbers as needed
 
 
-
+SELECT * FROM transactions;
